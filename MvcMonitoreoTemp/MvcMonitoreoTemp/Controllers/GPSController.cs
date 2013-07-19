@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -18,6 +19,35 @@ namespace MvcMonitoreoTemp.Controllers
         {
             return View(db.GPSs.ToList());
         }
+
+        public ActionResult Details(int id)
+        {
+            return View(db.GPSs.Find(id));
+        }
+
+        public ActionResult Edit(int id)
+        {
+            GPS gps = db.GPSs.Find(id);
+            if (gps == null)
+            {
+                return HttpNotFound();
+            }
+            return View(gps);
+        }
+        
+        [HttpPost]
+        public ActionResult Edit(GPS gps)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(gps).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(gps);
+        }
+    
+
 
     }
 }

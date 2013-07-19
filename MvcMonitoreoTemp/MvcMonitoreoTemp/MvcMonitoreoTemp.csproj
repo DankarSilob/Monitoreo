@@ -298,6 +298,8 @@
     <Content Include="Views\Usuarios\Delete.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\GPS\Index.cshtml" />
+    <Content Include="Views\GPS\Details.cshtml" />
+    <Content Include="Views\GPS\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
