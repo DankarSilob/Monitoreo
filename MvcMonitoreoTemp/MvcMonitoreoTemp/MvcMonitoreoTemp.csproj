@@ -300,6 +300,8 @@
     <Content Include="Views\GPS\Index.cshtml" />
     <Content Include="Views\GPS\Details.cshtml" />
     <Content Include="Views\GPS\Edit.cshtml" />
+    <Content Include="Views\GPS\Delete.cshtml" />
+    <Content Include="Views\GPS\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
