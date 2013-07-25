@@ -1,0 +1,72 @@
+﻿@model IEnumerable<MvcMonitoreoTemp.Models.Posiciones>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPrincipal.cshtml";
+}
+@Scripts.Render("~/scripts/jquery-1.7.1.js")
+    <script type="text/javascript" 
+	src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<div id="map_canvas" style="width:75%; height: 500px; float:left"></div>
+<div  style="width:20%; float:left; margin-left:10px;">
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Latitud</th>
+                <th>Longitud</th>
+                <th></th>
+            </tr>
+        </thead>
+        @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.latitud)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.longitud)
+            </td>
+            <td>
+                <img src="~/Images/zoom.png" width="16px" height="16px" onclick="zoomGps()" />
+            </td>
+        </tr>
+        }
+    </table>
+</div>
+<script type="text/javascript">
+    function initialize() { 
+        var latlng = new google.maps.LatLng(23.644524, -101.652833);
+        var options = { zoom: 5, center: latlng, 
+		mapTypeId: google.maps.MapTypeId.ROADMAP}; 
+        var map = new google.maps.Map(document.getElementById
+			("map_canvas"), options);
+        @foreach(var item in Model) {
+            <text>
+                     var contentString = '<h3>' + '@item.nombre' + '</h3>'
+                     var latLng = new google.maps.LatLng('@(item.latitud)', '@(item.longitud)');  
+                      var marker = new google.maps.Marker({
+                      position: latLng,
+                      map: map});
+                      var infoWindow = new google.maps.InfoWindow();
+                      google.maps.event.addListener(marker, 'click', function () {
+                          infoWindow.setContent(contentString);
+                          infoWindow.open(map, marker);
+                      });   
+           </text>
+        }
+     
+    }
+    function setMarkers() {
+
+    }
+    $(function () { 
+        initialize();
+        setMarkers();
+    });
+    function zoomGPS() {
+    }
+
+</script> 

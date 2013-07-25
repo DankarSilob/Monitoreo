@@ -10,5 +10,6 @@ namespace MvcMonitoreoTemp.Models
     {
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<GPS> GPSs { get; set; }
+        public DbSet<Posiciones> Posiciones { get; set; }
     }
 }
