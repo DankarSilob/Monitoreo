@@ -5,6 +5,7 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Data.SqlClient;
+using System.Web.Mvc;
 
 namespace MvcMonitoreoTemp.Models
 {
@@ -21,42 +22,20 @@ namespace MvcMonitoreoTemp.Models
         public DateTime fecha_registro { get; set; }
 
         MonitoreoEntities storeDB = new MonitoreoEntities();
-        public Boolean IsValid(string _login, string _password)
+        public Boolean IsValid(string _login, string _password, HttpContextBase context)
         {
             var usuario = storeDB.Usuarios.SingleOrDefault(
                 c => c.login == _login
                 && c.password == _password);
 
-            return usuario == null ? false : true;
-        }
-
-        public const string CartSessionKey = "cve_usuario";
-        public string GetCartId(HttpContextBase context)
-        {
-            if (context.Session[CartSessionKey] == null)
+            if(usuario != null)
             {
-                if (!string.IsNullOrWhiteSpace(context.User.Identity.Name))
-                {
-                    context.Session[CartSessionKey] =
-                        context.User.Identity.Name;
-                }
-                else
-                {
-                    // Generate a new random GUID using System.Guid class
-                    Guid tempCartId = Guid.NewGuid();
-                    // Send tempCartId back to client as a cookie
-                    context.Session[CartSessionKey] = tempCartId.ToString();
-                }
+                context.Session["cve_usuario"] = usuario.cve_usuario;
+                context.Session["nivel"] = usuario.nivel;
+                return true;
             }
-            return context.Session[CartSessionKey].ToString();
+            else
+                return false;
         }
     }
-
-    /*
-    public class MonitoreoDBContext : DbContext
-    {
-        public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Grupo> Grupos { get; set; }
-    }
-    */ 
 }

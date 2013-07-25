@@ -9,54 +9,33 @@ using MvcMonitoreoTemp.Models;
 
 namespace MvcMonitoreoTemp.Controllers
 {
-    public class UsuariosController : Controller
+    public class ClientesController : Controller
     {
         private MonitoreoEntities db = new MonitoreoEntities();
 
         //
-        // GET: /Usuarios/
-        /*
-        public ActionResult Index()
-        {
-            return View(db.Usuarios.ToList());
-        }
-        */
+        // GET: /Clientes/
 
         public ActionResult Index()
         {
-            int searchString = Convert.ToInt32(Session["cve_usuario"]);
-
-            var grupos = from m in db.Grupos
-                         select m;
-
-            grupos = grupos.Where(s => s.cve_usuario.Equals(searchString));
-
-            if(grupos == null)
-                return View();
-            else
-                return RedirectToAction("", "Grupos");
-        }
-
-        public ActionResult Clientes()
-        {
-            return View(db.Usuarios.ToList());
+            return View(db.Clientes.ToList());
         }
 
         //
-        // GET: /Usuarios/Details/5
+        // GET: /Clientes/Details/5
 
         public ActionResult Details(int id = 0)
         {
-            Usuario usuario = db.Usuarios.Find(id);
-            if (usuario == null)
+            Cliente cliente = db.Clientes.Find(id);
+            if (cliente == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(cliente);
         }
 
         //
-        // GET: /Usuarios/Create
+        // GET: /Clientes/Create
 
         public ActionResult Create()
         {
@@ -64,70 +43,70 @@ namespace MvcMonitoreoTemp.Controllers
         }
 
         //
-        // POST: /Usuarios/Create
+        // POST: /Clientes/Create
 
         [HttpPost]
-        public ActionResult Create(Usuario usuario)
+        public ActionResult Create(Cliente cliente)
         {
             if (ModelState.IsValid)
             {
-                db.Usuarios.Add(usuario);
+                db.Clientes.Add(cliente);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(usuario);
+            return View(cliente);
         }
 
         //
-        // GET: /Usuarios/Edit/5
+        // GET: /Clientes/Edit/5
 
         public ActionResult Edit(int id = 0)
         {
-            Usuario usuario = db.Usuarios.Find(id);
-            if (usuario == null)
+            Cliente cliente = db.Clientes.Find(id);
+            if (cliente == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(cliente);
         }
 
         //
-        // POST: /Usuarios/Edit/5
+        // POST: /Clientes/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(Usuario usuario)
+        public ActionResult Edit(Cliente cliente)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(usuario).State = EntityState.Modified;
+                db.Entry(cliente).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(usuario);
+            return View(cliente);
         }
 
         //
-        // GET: /Usuarios/Delete/5
+        // GET: /Clientes/Delete/5
 
         public ActionResult Delete(int id = 0)
         {
-            Usuario usuario = db.Usuarios.Find(id);
-            if (usuario == null)
+            Cliente cliente = db.Clientes.Find(id);
+            if (cliente == null)
             {
                 return HttpNotFound();
             }
-            return View(usuario);
+            return View(cliente);
         }
 
         //
-        // POST: /Usuarios/Delete/5
+        // POST: /Clientes/Delete/5
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-            Usuario usuario = db.Usuarios.Find(id);
-            db.Usuarios.Remove(usuario);
+            Cliente cliente = db.Clientes.Find(id);
+            db.Clientes.Remove(cliente);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

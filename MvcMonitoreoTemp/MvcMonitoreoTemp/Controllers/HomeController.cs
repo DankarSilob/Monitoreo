@@ -19,10 +19,21 @@ namespace MvcMonitoreoTemp.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (user.IsValid(user.login, user.password))
+                if (user.IsValid(user.login, user.password, this.HttpContext))
                 {
                     FormsAuthentication.SetAuthCookie(user.login, false);
-                    return RedirectToAction("", "Usuarios");
+                    switch (Convert.ToInt32(Session["nivel"]))
+                    {
+                        case 1: //WEBMASTER
+                            return RedirectToAction("", "Clientes");
+                            break;
+                        case 2: //ADMINISTRADOR
+                            return RedirectToAction("Clientes", "Usuarios");
+                            break;
+                        case 3: //MONITOREO
+                            return RedirectToAction("", "Posiciones");
+                            break;
+                    }
                 }
                 else
                 {

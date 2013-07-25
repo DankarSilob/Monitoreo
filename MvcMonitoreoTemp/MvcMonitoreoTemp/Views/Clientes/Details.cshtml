@@ -1,0 +1,50 @@
+﻿@model MvcMonitoreoTemp.Models.Cliente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Cliente</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.nombre)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.nombre)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.contacto)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.contacto)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.correo)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.correo)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.telefono)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.telefono)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.fecha_registro)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.fecha_registro)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.idCliente }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
