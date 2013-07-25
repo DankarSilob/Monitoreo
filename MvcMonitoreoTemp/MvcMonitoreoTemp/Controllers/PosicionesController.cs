@@ -19,5 +19,6 @@ namespace MvcMonitoreoTemp.Controllers
             return View(emp);
         }
 
+
     }
 }

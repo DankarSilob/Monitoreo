@@ -171,6 +171,7 @@
     <Compile Include="Controllers\GruposController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PosicionesController.cs" />
+    <Compile Include="Controllers\UnidadesController.cs" />
     <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -182,6 +183,7 @@
     <Compile Include="Models\Grupo.cs" />
     <Compile Include="Models\MonitoreoEntities.cs" />
     <Compile Include="Models\Posiciones.cs" />
+    <Compile Include="Models\Unidades.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -316,6 +318,10 @@
     <Content Include="Views\Shared\_LayoutPrincipal.cshtml" />
     <Content Include="Views\GPS\Create.cshtml" />
     <Content Include="Views\GPS\Delete.cshtml" />
+    <Content Include="Views\Unidades\Index.cshtml" />
+    <Content Include="Views\Unidades\Create.cshtml" />
+    <Content Include="Views\Unidades\Edit.cshtml" />
+    <Content Include="Views\Unidades\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
