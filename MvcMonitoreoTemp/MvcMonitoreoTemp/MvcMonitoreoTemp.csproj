@@ -188,6 +188,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\principal\principal.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -244,7 +245,10 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Thumbs.db" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Images\info.png" />
+    <Content Include="Images\zoom.png" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -258,10 +262,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\location.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
-    <Content Include="Web.config">
-      <SubType>Designer</SubType>
-    </Content>
+    <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -324,9 +327,6 @@
     <Content Include="Views\Unidades\Create.cshtml" />
     <Content Include="Views\Unidades\Edit.cshtml" />
     <Content Include="Views\Unidades\Delete.cshtml" />
-    <Content Include="Views\Usuarios\UsuariosCliente.cshtml" />
-    <Content Include="Views\Usuarios\AgregarUsuarioCliente.cshtml" />
-    <Content Include="Views\Usuarios\AgregarUsuario.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
