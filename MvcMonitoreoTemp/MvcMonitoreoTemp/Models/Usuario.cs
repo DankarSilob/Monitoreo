@@ -37,5 +37,13 @@ namespace MvcMonitoreoTemp.Models
             else
                 return false;
         }
+
+        public partial class clientes_usuarios
+        {
+            public int cve_cliente { get; set; }
+            public int cve_usuario { get; set; }
+        }
     }
+
+    
 }

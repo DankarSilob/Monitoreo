@@ -24,6 +24,11 @@ namespace MvcMonitoreoTemp.Controllers
         //
         // GET: /Clientes/Details/5
 
+        public ActionResult Usuarios(int id = 0)
+        {
+            return RedirectToAction("Usuarios", "Usuarios");
+        }
+
         public ActionResult Details(int id = 0)
         {
             Cliente cliente = db.Clientes.Find(id);

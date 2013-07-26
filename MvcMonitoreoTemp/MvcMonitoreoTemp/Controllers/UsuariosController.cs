@@ -14,13 +14,51 @@ namespace MvcMonitoreoTemp.Controllers
         private MonitoreoEntities db = new MonitoreoEntities();
 
         //
-        // GET: /Usuarios/
-        /*
-        public ActionResult Index()
+        // POST: /Usuarios/Create
+
+        public ActionResult AgregarUsuario(int id = 0)
         {
-            return View(db.Usuarios.ToList());
+            ViewBag.idCliente = id;
+            return View();
         }
-        */
+
+        [HttpPost]
+        public ActionResult AgregarUsuario(Usuario usuario, int id = 0)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Usuarios.Add(usuario);
+                db.SaveChanges();
+
+                /*
+                clientes_usuarios clientes_usuarios = new clientes_usuarios();
+                clientes_usuarios.cve_cliente = id;
+                clientes_usuarios.cve_usuario = usuario.cve_usuario;
+                db.clientes_usuarios.Add(clientes_usuarios);
+                db.SaveChanges();
+                 */ 
+
+                string sQuery = "INSERT INTO clientes_usuarios (cve_cliente, cve_usuario) VALUES ( 1 , 9) ";
+                var usuarios = db.Usuarios.SqlQuery(sQuery);
+
+                return RedirectToAction("UsuariosCliente", new { id = id });
+            }
+
+            return View(usuario);
+        }
+
+        public ActionResult UsuariosCliente(int id = 0)
+        {
+            ViewBag.idCliente = id;
+
+            string sQuery = "select u.* " +
+            "from clientes_usuarios cu " +
+            "inner join usuarios u on u.cve_usuario = cu.cve_usuario " +
+            "where cu.cve_cliente = {0}";
+            var usuarios = db.Usuarios.SqlQuery(sQuery, id);
+
+            return View(usuarios);
+        }
 
         public ActionResult Index()
         {
