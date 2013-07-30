@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MvcMonitoreoTemp.Models
 {
@@ -15,5 +16,7 @@ namespace MvcMonitoreoTemp.Models
         public string correo { get; set; }
         public string telefono { get; set; }
         public DateTime fecha_registro { get; set; }
+        [ForeignKey("cve_usuario")]
+        public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

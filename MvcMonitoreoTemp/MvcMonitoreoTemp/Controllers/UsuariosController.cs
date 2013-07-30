@@ -27,19 +27,21 @@ namespace MvcMonitoreoTemp.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Usuarios.Add(usuario);
+                usuario = db.Usuarios.Add(usuario);
                 db.SaveChanges();
+
+                usuario.insertClientesUsuarios(id, usuario.cve_usuario);
 
                 /*
-                clientes_usuarios clientes_usuarios = new clientes_usuarios();
-                clientes_usuarios.cve_cliente = id;
-                clientes_usuarios.cve_usuario = usuario.cve_usuario;
-                db.clientes_usuarios.Add(clientes_usuarios);
-                db.SaveChanges();
-                 */ 
+                Cliente cliente = db.Clientes.Find(id);
+                List<Cliente> list = new List<Cliente>();
+                list.Add(cliente);
 
-                string sQuery = "INSERT INTO clientes_usuarios (cve_cliente, cve_usuario) VALUES ( 1 , 9) ";
-                var usuarios = db.Usuarios.SqlQuery(sQuery);
+                usuario.Clientes = list;
+
+                usuario = db.Usuarios.Add(usuario);
+                db.SaveChanges();
+                */
 
                 return RedirectToAction("UsuariosCliente", new { id = id });
             }
@@ -52,9 +54,9 @@ namespace MvcMonitoreoTemp.Controllers
             ViewBag.idCliente = id;
 
             string sQuery = "select u.* " +
-            "from clientes_usuarios cu " +
+            "from ClientesUsuarios cu " +
             "inner join usuarios u on u.cve_usuario = cu.cve_usuario " +
-            "where cu.cve_cliente = {0}";
+            "where cu.idCliente = {0}";
             var usuarios = db.Usuarios.SqlQuery(sQuery, id);
 
             return View(usuarios);
@@ -62,6 +64,21 @@ namespace MvcMonitoreoTemp.Controllers
 
         public ActionResult Index()
         {
+            switch (Convert.ToInt32(Session["nivel"]))
+            {
+                case 1: //WEBMASTER
+                    return RedirectToAction("", "Clientes");
+                    break;
+                case 2: //ADMINISTRADOR
+                    return RedirectToAction("Clientes", "Usuarios");
+                    break;
+                case 3: //MONITOREO
+                    return RedirectToAction("", "Posiciones");
+                    break;
+            }
+
+            return View();
+            /*
             int searchString = Convert.ToInt32(Session["cve_usuario"]);
 
             var grupos = from m in db.Grupos
@@ -73,6 +90,7 @@ namespace MvcMonitoreoTemp.Controllers
                 return View();
             else
                 return RedirectToAction("", "Grupos");
+             * */
         }
 
         public ActionResult Clientes()

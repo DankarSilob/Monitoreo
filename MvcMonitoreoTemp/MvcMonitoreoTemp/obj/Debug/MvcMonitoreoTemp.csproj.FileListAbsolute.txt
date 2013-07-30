@@ -154,6 +154,11 @@ C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\b
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\DotNetOpenAuth.OAuth.xml
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\DotNetOpenAuth.OpenId.xml
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\obj\Debug\MvcMonitoreoTemp.csprojResolveAssemblyReference.cache
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\obj\Debug\MvcMonitoreoTemp.dll
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\obj\Debug\MvcMonitoreoTemp.pdb
+C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.ObjectBuilder2.dll
+C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.Unity.dll
+C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml

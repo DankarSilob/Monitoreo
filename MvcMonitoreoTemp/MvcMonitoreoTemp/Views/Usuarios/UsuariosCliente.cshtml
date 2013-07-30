@@ -7,8 +7,9 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "AgregarUsuario", new { id = ViewBag.idCliente })
+    @Html.ActionLink("Agregar Usuario", "AgregarUsuario", new { id = ViewBag.idCliente })
 </p>
+
 <table>
     <tr>
         <th>
@@ -55,3 +56,7 @@
 }
 
 </table>
+
+<p>
+    @Html.ActionLink("Regresar", "", "Clientes")
+</p>
