@@ -162,3 +162,4 @@ C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\b
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.Unity.dll
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\obj\Debug\MvcMonitoreoTemp.csprojResolveAssemblyReference.cache
