@@ -16,6 +16,7 @@ namespace MvcMonitoreoTemp.Models
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Unidades> Unidades { get; set; }
         public DbSet<UnidadesListado> UnidadesListado { get; set; }
+<<<<<<< HEAD
         public DbSet<clientes_usuarios> clientes_usuarios { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -38,5 +39,8 @@ namespace MvcMonitoreoTemp.Models
                 .WithMany();
              */ 
         }
+=======
+        //public DbSet<clientes_usuarios> clientes_usuarios { get; set; }
+>>>>>>> 002b90b2932b10cbf7082629815f01f65068ede3
     }
 }
