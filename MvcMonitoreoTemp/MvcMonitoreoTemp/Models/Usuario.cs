@@ -57,6 +57,16 @@ namespace MvcMonitoreoTemp.Models
             db.AddInParameter(dbCommand, "idUsuario", DbType.String, idUsuario);
             db.ExecuteNonQuery(dbCommand);
         }
+
+        public void insertUsuariosUsuarios(int idUsuario, int idUsuarioCreado)
+        {
+            Microsoft.Practices.EnterpriseLibrary.Data.Database db = DatabaseFactory.CreateDatabase("MonitoreoEntities");
+            string sqlCommand = "dbo.insertUsuariosUsuarios";
+            DbCommand dbCommand = db.GetStoredProcCommand(sqlCommand);
+            db.AddInParameter(dbCommand, "idUsuario", DbType.String, idUsuario);
+            db.AddInParameter(dbCommand, "idUsuarioCreado", DbType.String, idUsuarioCreado);
+            db.ExecuteNonQuery(dbCommand);
+        }
     }
 
     public class clientes_usuarios

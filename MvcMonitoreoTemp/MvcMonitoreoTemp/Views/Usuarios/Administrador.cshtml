@@ -1,30 +1,30 @@
 ﻿@model IEnumerable<MvcMonitoreoTemp.Models.Usuario>
 
 @{
-    ViewBag.Title = "Clientes";
+    ViewBag.Title = "Usuarios";
 }
 
-<h2>Clientes</h2>
+<h2>Usuarios</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
-@*</p>*@
+    @Html.ActionLink("Agregar Usuario", "Agregar", new { nivel = 3 })
+</p>
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.nombre)
+            @Html.Label("Nombre")
         </th>
-        <th>
+        @*<th>
             @Html.DisplayNameFor(model => model.login)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.password)
+        </th>*@
+        <th>
+            @Html.Label("Nivel")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.nivel)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.fecha_registro)
+            @Html.Label("Fecha Registro")
         </th>
         <th></th>
     </tr>
@@ -34,22 +34,37 @@
         <td>
             @Html.DisplayFor(modelItem => item.nombre)
         </td>
-        <td>
+        @*<td>
             @Html.DisplayFor(modelItem => item.login)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.password)
-        </td>
-        <td>
+        </td>*@
+        @*<td>
             @Html.DisplayFor(modelItem => item.nivel)
+        </td>*@
+
+        <td>
+            @if (@item.nivel == 2) 
+            { 
+                @Html.Label("Administrador") 
+            } 
+            else 
+            { 
+                @Html.Label("Monitoreo")
+            }
         </td>
+
         <td>
             @Html.DisplayFor(modelItem => item.fecha_registro)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.cve_usuario }) |
-            @Html.ActionLink("Details", "Details", new { id=item.cve_usuario }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.cve_usuario })
+            @Html.ActionLink("Edit", "Edit", new { id=item.cve_usuario })
+             
+            @if (@item.nivel == 3)
+            {
+              @Html.ActionLink("Delete", "Delete", new { id=item.cve_usuario })
+            }
         </td>
     </tr>
 }

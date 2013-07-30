@@ -28,7 +28,7 @@ namespace MvcMonitoreoTemp.Controllers
                             return RedirectToAction("", "Clientes");
                             break;
                         case 2: //ADMINISTRADOR
-                            return RedirectToAction("Clientes", "Usuarios");
+                            return RedirectToAction("Administrador", "Usuarios");
                             break;
                         case 3: //MONITOREO
                             return RedirectToAction("", "Posiciones");

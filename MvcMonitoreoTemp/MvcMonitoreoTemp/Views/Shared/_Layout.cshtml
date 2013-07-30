@@ -12,7 +12,7 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                    <p class="site-title">@Html.ActionLink("DevFreaks", "Index", "Home")</p>
                 </div>
                 <div class="float-right">
                     <section id="login">
@@ -21,6 +21,10 @@
                      @if (Request.IsAuthenticated) {
                     <nav>
                         <ul id="menu">
+                            @if(Convert.ToInt32(Session["nivel"])==1)
+                            {   
+                                <li>@Html.ActionLink("Clientes", "Index", "Clientes")</li>
+                            }
                             <li>@Html.ActionLink("Usuarios", "Index", "Usuarios")</li>
                             <li>@Html.ActionLink("GPS", "Index", "GPS")</li>
                             <li>@Html.ActionLink("Home", "Index", "Home")</li>

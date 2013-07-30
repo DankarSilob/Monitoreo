@@ -335,6 +335,8 @@
     <Content Include="Views\Unidades\Create.cshtml" />
     <Content Include="Views\Unidades\Edit.cshtml" />
     <Content Include="Views\Unidades\Delete.cshtml" />
+    <Content Include="Views\Usuarios\Administrador.cshtml" />
+    <Content Include="Views\Usuarios\Agregar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
