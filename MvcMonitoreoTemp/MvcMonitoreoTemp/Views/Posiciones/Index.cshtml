@@ -48,6 +48,11 @@
         <text>
             setMarkers(@item.latitud, @item.longitud , '@item.nombre');
         </text>
-        }
+        } 
+$.getJSON("http://50.112.124.207/monitoreoapi/api/Posiciones",
+    function(data){
+        console.log(data);
+    });
+        timer = setTimeout('realoadPositions()', 4000);
     });
 </script> 

@@ -1,6 +1,8 @@
 ﻿//JS con las funciones
 
 var map;
+var markers = [];
+
 function initialize()
 {
     var latlng = new google.maps.LatLng(23.644524, -101.652833);
@@ -24,10 +26,35 @@ function setMarkers(latitud, longitud, nombre) {
         infoWindow.setContent(contentString);
         infoWindow.open(map, marker);
     });
+    markers.push(marker);
+    console.log(markers);
 }
 
 function zoomGPS(latitud, longitud) {
     var latlngPos = new google.maps.LatLng(latitud, longitud);
     map.setCenter(latlngPos);
     map.setZoom(18);
+}
+
+function realoadPositions() {
+    deleteOverlays();
+}
+
+
+
+function deleteOverlays() {
+    clearOverlays();
+    markers = [];
+}
+
+
+function clearOverlays() {
+    setAllMap(null);
+}
+
+// Sets the map on all markers in the array.
+function setAllMap(map) {
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }
 }

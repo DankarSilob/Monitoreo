@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMonitoreoTemp", "MvcMonitoreoTemp\MvcMonitoreoTemp.csproj", "{B94DCC11-0FCA-4B7E-8F82-B10A8C86A592}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoreoAPI", "MonitoreoAPI\MonitoreoAPI.csproj", "{64BACE9D-0699-4A48-9EC1-7D10A9EF8C3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{B94DCC11-0FCA-4B7E-8F82-B10A8C86A592}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B94DCC11-0FCA-4B7E-8F82-B10A8C86A592}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B94DCC11-0FCA-4B7E-8F82-B10A8C86A592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64BACE9D-0699-4A48-9EC1-7D10A9EF8C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64BACE9D-0699-4A48-9EC1-7D10A9EF8C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64BACE9D-0699-4A48-9EC1-7D10A9EF8C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64BACE9D-0699-4A48-9EC1-7D10A9EF8C3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

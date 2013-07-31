@@ -163,3 +163,15 @@ C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\b
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
 C:\Users\TICorp10\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\obj\Debug\MvcMonitoreoTemp.csprojResolveAssemblyReference.cache
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.Unity.dll
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.Unity.Interception.dll
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.Unity.pdb
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\sierrad.KENOSHA\Documents\GitHub\Monitoreo\MvcMonitoreoTemp\MvcMonitoreoTemp\bin\Microsoft.Practices.Unity.Interception.pdb
