@@ -3,23 +3,26 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutPrincipal.cshtml";
+    ViewBag.count = 0;
 }
 @Scripts.Render("~/scripts/jquery-1.7.1.js")
+@Scripts.Render("~/scripts/jquery.custom_radio_checkbox.js")
 @Scripts.Render("~/scripts/location.js")
     <script type="text/javascript" 
 	src="http://maps.google.com/maps/api/js?sensor=false"></script> 
 <div id="map_canvas" style="width:75%; height: 500px; float:left"></div>
-<div  style="width:20%; float:left; margin-left:10px;">
+<div  style="width:20%; float:left; margin-left:10px;" id="partial">
     <table>
         <thead>
             <tr>
                 <th>Nombre</th>
                 <th>Latitud</th>
                 <th>Longitud</th>
-                <th></th>
-                <th></th>
+                <th><input type="button" onclick="loadPartial()" /></th>
+                <th><input type="checkbox" id="all" checked="checked"  /></th>
             </tr>
         </thead>
+        @{int i = 0;}
         @foreach (var item in Model) {
         <tr>
             <td>
@@ -35,7 +38,9 @@
                 <img src="~/Images/zoom.png" width="16px" height="16px" onclick="zoomGPS(@item.latitud, @item.longitud)" />
             </td>
             <td>
-                <img src="~/Images/info.png" width="16px" height="16px" />
+                @Html.CheckBox("posicionesList", true, new { id =i ,  @class="chk" })
+                @{i++;} 
+ 
             </td>
         </tr>
         }
@@ -44,15 +49,41 @@
 <script type="text/javascript">
     $(function () { 
         initialize();
-        @foreach(var item in Model) {
-        <text>
-            setMarkers(@item.latitud, @item.longitud , '@item.nombre');
-        </text>
-        } 
-$.getJSON("http://50.112.124.207/monitoreoapi/api/Posiciones",
-    function(data){
-        console.log(data);
+       
+        $.getJSON("http://localhost/sattrackapi/api/Posiciones",
+            function(data){
+                $.each(data, function (index, value) {
+                    setMarkers(value.latitud,value.longitud,value.nombre);
+                });
+                setAllMap(map);
+        });
+        timer = setTimeout('realoadPositions()', 300000);
     });
-        timer = setTimeout('realoadPositions()', 4000);
+    $(document).ready(function () {
+        $('.chk').click(function () {
+            var id = $(this).attr('id');
+
+                if (!$(this).is(':checked')) {
+
+                    removeMarker(id);
+                }
+                else {
+                    setMarker(id);
+                }
+        });
+        $('#all').click(function () {
+            if (!$(this).is(':checked')) {
+                $('input:checkbox').removeAttr('checked');
+                removeAllMarkersCheckbox();
+            }
+            else {
+                $('input:checkbox').attr('checked', 'checked');
+                setAllMarkersCheckbox();
+            }
+        });
     });
+
+    function loadPartial() {
+        $('#partial').load('/sattrack/Posiciones/Details');
+    }
 </script> 

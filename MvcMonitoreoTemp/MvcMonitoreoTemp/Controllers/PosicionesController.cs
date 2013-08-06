@@ -16,7 +16,13 @@ namespace MvcMonitoreoTemp.Controllers
             string nativeSQLQuery = "SELECT * from PosicionesMapa where 1 = {0}";
             string name = "1";
             var emp = db.Posiciones.SqlQuery(nativeSQLQuery, name);
+            ViewBag.count = 0;
             return View(emp);
+        }
+
+        public ActionResult Details()
+        {
+            return View();
         }
 
 

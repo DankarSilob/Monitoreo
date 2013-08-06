@@ -257,11 +257,116 @@
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Images\info.png" />
     <Content Include="Images\zoom.png" />
+    <Content Include="Scripts\jqtransformplugin\._jqtransform.css" />
+    <Content Include="Scripts\jqtransformplugin\._jquery.jqtransform.js" />
+    <Content Include="Scripts\jqtransformplugin\img\._btn_left.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\._btn_right.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\btn_left.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\btn_right.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\checkbox.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\._input_left-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\._input_left-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\._input_left.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\._input_right-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\._input_right-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\._input_right.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\._input_text_left.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\._input_text_right.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\input_left-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\input_left-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\input_left.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\input_right-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\input_right-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\input_right.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\input_text_left.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\input\input_text_right.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\radio.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\select_left.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\select_right.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea-mm-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea-mm-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea-mm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea_bl.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea_bm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea_br.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea_ml.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea_mr.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea_tl.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea_tm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\._textarea_tr.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-bl-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-bl-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-bl.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-bm-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-bm-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-bm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-br-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-br-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-br.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-ml-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-ml-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-ml.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-mm-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-mm-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-mm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-mr-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-mr-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-mr.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-tl-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-tl-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-tl.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-tm-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-tm-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-tm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-tr-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-tr-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\._textarea-tr.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-bl-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-bl-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-bl.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-bm-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-bm-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-bm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-br-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-br-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-br.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-ml-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-ml-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-ml.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-mm-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-mm-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-mm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-mr-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-mr-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-mr.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-tl-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-tl-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-tl.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-tm-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-tm-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-tm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-tr-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-tr-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\notneeded\textarea-tr.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea-mm-focus.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea-mm-hover.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea-mm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea_bl.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea_bm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea_br.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea_ml.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea_mr.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea_tl.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea_tm.gif" />
+    <Content Include="Scripts\jqtransformplugin\img\textarea\textarea_tr.gif" />
+    <Content Include="Scripts\jqtransformplugin\jqtransform.css" />
+    <Content Include="Scripts\jqtransformplugin\jquery.jqtransform.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.custom_radio_checkbox.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -340,6 +445,7 @@
     <Content Include="Views\Grupos\Create.cshtml" />
     <Content Include="Views\Grupos\Edit.cshtml" />
     <Content Include="Views\Grupos\Delete.cshtml" />
+    <Content Include="Views\Posiciones\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -363,7 +469,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>18909</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:9689/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
