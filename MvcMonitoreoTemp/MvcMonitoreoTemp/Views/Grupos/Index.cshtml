@@ -6,9 +6,9 @@
 
 <h2>Index</h2>
 
-@*<p>
-    @Html.ActionLink("Create New", "Create")
-</p>*@
+<p>
+    @Html.ActionLink("Agregar Grupo", "Create")
+</p>
 <table>
     <tr>
         <th>
@@ -22,6 +22,12 @@
         <td>
             @Html.DisplayFor(modelItem => item.nombre)
         </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.cve_grupo}) 
+            @Html.ActionLink("Delete", "Delete", new { id=item.cve_grupo})
+
+        </td>
+
     </tr>
 }
 
