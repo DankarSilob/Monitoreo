@@ -46,6 +46,18 @@ namespace MvcMonitoreoTemp.Controllers
             }
             return View(gps);
         }
+
+        public ActionResult Grupos(int id)
+        {
+            string sQuery = "select u.* " +
+            "from ClientesUsuarios cu " +
+            "inner join usuarios u on u.cve_usuario = cu.cve_usuario " +
+            "where cu.idCliente = {0}";
+            var gpss = db.Usuarios.SqlQuery(sQuery, id);
+
+            return View(gpss);
+        }
+
     
 
 
